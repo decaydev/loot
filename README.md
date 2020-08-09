@@ -1,5 +1,5 @@
 
-![](https://i.ibb.co/vvRfnRb/loot.png =750x750)
+![](https://i.ibb.co/vvRfnRb/loot.png =750x)
 
 ## A simple/fast loot system.
 
