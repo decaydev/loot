@@ -27,7 +27,7 @@ Why another loot system? Because all of the existing loot systems didn't do what
 
 ## Todo
 - skinnable loot
-- account for rarity
+- rarity indexing
 - blueprint boolean (give blueprints?)
 
 ### LootTable Example (not compatible with BetterLoot):
