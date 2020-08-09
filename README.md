@@ -2,7 +2,9 @@
 
 ## A simple/fast loot system.
 
-Why another loot system? Because all of the existing loot systems didn't do what we wanted, were 3-4 times as large from a code base perspective, and painfully slow which can have serious impact on user and server performance. We wanted the following attributes:
+Why another loot system? Because all of the existing loot systems didn't do what we wanted, were 3-4 times as large from a code base perspective, and painfully slow which can have serious impact on user and server performance. 
+
+We wanted the following attributes to ensure performance:
 
 - unique loot in crates without intense looping/retrying
 - stacked loot
@@ -58,3 +60,7 @@ Why another loot system? Because all of the existing loot systems didn't do what
    }
 ]
 ```
+
+## Why not use BetterLoot?
+
+We started here but quickly learned that the plugin wasn't doing exactly what we wanted. As engineers we decided to take a peek under the covers. We found a lot of useless code, innaccurate data being displayed to the user/logs, too many looping constucts, and high cyclomatic complexity between functions/methods. Last but not least, we also noticed the BetterLoot plugin caused the game engine to chirp/halt on an 4 Core, 16GB server with no users. This is unacceptable to us, so we took matters into our own hands. 
