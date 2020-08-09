@@ -5,7 +5,7 @@ using Random = System.Random;
 
 namespace Oxide.Plugins
 {
-	[Info("DLoot", "decay.dev", "0.0.1")]
+	[Info("DecayLoot", "decay.dev", "0.0.1")]
 	[Description("add loot to tables")]
 
 	public class DLoot : RustPlugin
