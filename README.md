@@ -16,22 +16,25 @@ We wanted the following attributes to ensure performance:
     - min/max respected (if min is 12 and max is 12, put 12 pieces of looot in crate)
   - no duplicates
 - we do not attempt to generate any config code
-  - this means much less code
 - we do not account for prefabs (crates), but we provide a generator tool that does.
-- does not rely on or use Rust/Facepunch DLL's
+- we do not rely on or use Rust/Facepunch DLL's
   - less chances of breakage when API's change (and they do)
 
 ## Requirements
 
 - rust/oxide server
-- generate your config first and move it to the `config/` directory in oxide
-- install plugin in `plugins/`
-- reload plugin and enjoy with some tea
+- generate your `DecayLoot.json` config first and move it to the `oxide/config/` directory in oxide
+- move `DecayLoot.cs`  into `plugins/` directory
+- reload plugin
+- containers drop and pick up new loot
 
 ## Todo
 - skinnable loot
 - rarity indexing
+  - key for this exists, just need to implement
 - blueprint boolean (give blueprints?)
+  - we can give a blue print or not
+    - we may implement a dice roll (TBD)
 
 ### LootTable Example (not compatible with BetterLoot):
 ```json
@@ -64,4 +67,4 @@ We wanted the following attributes to ensure performance:
 
 ## Why not use BetterLoot?
 
-We started here but quickly learned that the plugin wasn't doing exactly what we wanted. As engineers we decided to take a peek under the covers. We found a lot of useless code, innaccurate data being displayed to the user/logs, too many looping constucts, and high cyclomatic complexity between functions/methods. Last but not least, we also noticed the BetterLoot plugin caused the game engine to chirp/halt on an 4 Core, 16GB server with no users. This is unacceptable to us, so we took matters into our own hands. 
+We started here but quickly learned that the plugin wasn't doing exactly what we wanted. As engineers we decided to take a peek under the covers. We found a lot of useless code, innaccurate data being displayed to the user/logs, too many looping constucts, and high cyclomatic complexity between functions/methods. Last but not least, we also noticed the BetterLoot plugin caused the game engine to chirp/halt on a 4 Core, 16GB server with no users. 670 lines of code versus 150 lines of code, you do the math.
