@@ -33,8 +33,7 @@ namespace Oxide.Plugins
                         populatedContainers++;
                         break;
                     }
-
-                Puts($"Populated {populatedContainers} supported containers.");
+                Puts($"[DecayLoot]: {populatedContainers} containers uptdate.");
                 initialized = true;
             });
         }
