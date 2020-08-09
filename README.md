@@ -1,5 +1,4 @@
-
-![](https://i.ibb.co/vvRfnRb/loot.png =750x)
+<img src="https://i.ibb.co/vvRfnRb/loot.png" alt="decay.dev/loot" width="325"/>
 
 ## A simple/fast loot system.
 
