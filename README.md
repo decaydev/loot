@@ -67,4 +67,4 @@ We wanted the following attributes to ensure performance:
 
 ## Why not use BetterLoot?
 
-We started here but quickly learned that the plugin wasn't doing exactly what we wanted. As engineers we decided to take a peek under the covers. We found a lot of useless code, innaccurate data being displayed to the user/logs, too many looping constucts, and high cyclomatic complexity between functions/methods. Last but not least, we also noticed the BetterLoot plugin caused the game engine to chirp/halt on a 4 Core, 16GB server with no users. 670 lines of code versus 150 lines of code, you do the math.
+We started here but quickly learned that the plugin wasn't doing exactly what we wanted. As engineers we decided to take a peek under the covers. We found a lot of useless code, inaccurate data being displayed to the user/logs, too many looping constucts, and high cyclomatic complexity between functions/methods. Last but not least, we also noticed the BetterLoot plugin caused the game engine to chirp/halt on a 4 Core, 16GB server with no users. 670 lines of code versus 150 lines of code, you do the math.
