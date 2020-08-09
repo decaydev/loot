@@ -6,16 +6,24 @@ Why another loot system? Because all of the existing loot systems didn't do what
 
 - unique loot in crates without intense looping/retrying
 - stacked loot
+- fixed scrap amounts
 - random versus probable
   - random number of loot items within range
   - random min/max stacking within range
-    - min/max respected (if the min is 12 and the max is 12, generate 12 pieces of loot)
+    - min/max respected (if min is 12 and max is 12, put 12 pieces of looot in crate)
   - no duplicates
 - we do not attempt to generate any config code
   - this means much less code
 - we do not account for prefabs (crates), but we provide a generator tool that does.
 - does not rely on or use Rust/Facepunch DLL's
   - less chances of breakage when API's change (and they do)
+
+## Requirements
+
+- rust/oxide server
+- generate your config first and move it to the `config/` directory in oxide
+- install plugin in `plugins/`
+- reload plugin and enjoy with some tea
 
 ## Todo
 - skinnable loot
