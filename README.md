@@ -22,7 +22,7 @@ Why another loot system? Because all of the existing loot systems didn't do what
 - account for rarity
 - blueprint boolean (give blueprints?)
 
-### LootTable Example:
+### LootTable Example (not compatible with BetterLoot):
 ```json
 [
    {
