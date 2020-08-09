@@ -1,4 +1,5 @@
-<img src="https://i.ibb.co/vvRfnRb/loot.png" alt="decay.dev/loot" width="325"/>
+
+<img src="https://i.ibb.co/2dGJm44/logo.png" alt="decay.dev" width="175"/><img src="https://i.ibb.co/vvRfnRb/loot.png" alt="decay.dev/loot" width="175"/>
 
 ## A simple/fast loot system.
 
