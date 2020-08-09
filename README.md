@@ -1,4 +1,5 @@
 # DecayLoot
+![](https://avatars2.githubusercontent.com/u/52544889?s=400&u=b9887976a97a065b507224a1b51c70865a1e40ab&v=4)
 
 ## A simple/fast loot system.
 
