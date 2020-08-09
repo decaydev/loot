@@ -17,7 +17,7 @@ We wanted the following attributes to ensure performance:
   - no duplicates
 - we do not attempt to generate any config code
 - we do not account for prefabs (crates), but we provide a generator tool that does.
-- we do not rely on or use Rust/Facepunch DLL's
+- we do not rely on or use Rust/Facepunch DLL's outside of what `oxide` uses
   - less chances of breakage when API's change (and they do)
 
 ## Requirements
