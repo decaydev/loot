@@ -22,22 +22,9 @@ namespace Oxide.Plugins
 
         private ConfigData configData;
 
-        void LoadAllContainers()
-        {
-            foreach (ConfigData.Prefab prefab in configData.Prefabs)
-            {
-                var loot = GameManager.server.FindPrefab(prefab.id)?.GetComponent<LootContainer>();
-                foreach (ConfigData.Prefab.Item item in prefab.items)
-                {
-
-                }
-            }
-        }
-
         void OnServerInitialized()
         {
             ItemManager.Initialize();
-            LoadAllContainers();
             UpdateInternals();
         }
 
@@ -89,40 +76,40 @@ namespace Oxide.Plugins
                 var itemAmount = rng.Next(itemSpec.min, itemSpec.max);
                 var ranged = new ItemAmountRanged(itemDef, itemAmount > 1 ? itemAmount : 1f);
                 Item item;
-		if (ranged.itemDef.spawnAsBlueprint)
-		{
-			ItemDefinition blueprintBaseDef = ItemManager.FindItemDefinition("blueprintbase");
-			if (blueprintBaseDef == null)
-			{
-                        	PrintWarning("blueprintbase is null for item: {0}", itemSpec.shortname);
-				continue;
-			}
-			item = ItemManager.Create(blueprintBaseDef, 1, 0uL);
-			item.blueprintTarget = ranged.itemDef.itemid;
-		}
-		else
-		{
-			item = ItemManager.CreateByItemID(ranged.itemid, (int)ranged.GetAmount(), 0uL);
-		}
-		if (item == null)
-		{
-			continue;
-		}
+				if (ranged.itemDef.spawnAsBlueprint)
+				{
+					ItemDefinition blueprintBaseDef = ItemManager.FindItemDefinition("blueprintbase");
+					if (blueprintBaseDef == null)
+					{
+							   PrintWarning("blueprintbase is null for item: {0}", itemSpec.shortname);
+						continue;
+					}
+					item = ItemManager.Create(blueprintBaseDef, 1, 0uL);
+					item.blueprintTarget = ranged.itemDef.itemid;
+				}
+				else
+				{
+					item = ItemManager.CreateByItemID(ranged.itemid, (int)ranged.GetAmount(), 0uL);
+				}
+				if (item == null)
+				{
+					continue;
+				}
                 bool allowStack = !new[]{
                     ItemCategory.Weapon,
                 }.Contains(itemDef.category);
-		if (!item.MoveToContainer(container.inventory, -1, allowStack))
-		{
-			if ((bool)container.inventory.playerOwner)
-			{
-				item.Drop(container.inventory.playerOwner.GetDropPosition(), container.inventory.playerOwner.GetDropVelocity());
-			}
-			else
-			{
-				item.Remove();
-			}
-		}
-            }
+				if (!item.MoveToContainer(container.inventory, -1, allowStack))
+				{
+					if ((bool)container.inventory.playerOwner)
+					{
+						item.Drop(container.inventory.playerOwner.GetDropPosition(), container.inventory.playerOwner.GetDropVelocity());
+					}
+					else
+					{
+						item.Remove();
+					}
+				}
+    		}
             container.GenerateScrap();
             container.SendNetworkUpdate();
             populatedContainers++;
