@@ -99,7 +99,7 @@ namespace Oxide.Plugins
 			}
 			container.GenerateScrap();
 			container.SendNetworkUpdate();
-            return true;
+			return true;
 		}
 
 		object OnLootSpawn(LootContainer container)
