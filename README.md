@@ -20,11 +20,11 @@ We wanted the following attributes to ensure performance:
 - we do not rely on or use Rust/Facepunch DLL's outside of what `oxide` uses
   - less chances of breakage when API's change (and they do)
 
-## Requirements
+## Requirements (assumes linux server)
 
 - rust/oxide server
 - generate your `DecayLoot.json` config first and move it to the `oxide/config/` directory in oxide
-- move `DecayLoot.cs`  into `plugins/` directory
+- move `DecayLoot.cs`  into `oxide/plugins/` directory
 - reload plugin
 - containers drop and pick up new loot
 
