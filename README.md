@@ -3,7 +3,7 @@
 
 ## A simple/fast loot system.
 
-Why another loot system? Because all of the existing loot systems didn't do what we wanted, were 3-4 times as large from a code base perspective, and painfully slow which can have serious impact on server performance which results in a negative experience for players. 
+Why another loot system? Because all of the existing loot systems didn't do what we wanted, were 3-4 times as large from a code base perspective, and all were painfully slow which can have serious impact on server performance which results in a negative player experience. Less is more!
 
 We wanted the following attributes to ensure performance:
 
