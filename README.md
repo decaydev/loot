@@ -60,7 +60,10 @@ We wanted the following attributes to ensure performance:
          1,
          2
       ],
-      "scrap":100
+      "scrap_range": [
+         1,
+         100
+      ]
    }
 ]
 ```
