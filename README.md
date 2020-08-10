@@ -13,7 +13,7 @@ We wanted the following attributes to ensure performance:
 - random versus probable
   - random number of loot items within range
   - random min/max stacking within range
-    - min/max respected (if min is 12 and max is 12, put 12 pieces of looot in crate)
+    - min/max respected (if min is 12 and max is 12, put 12 pieces of loot in crate)
   - no duplicates
 - we do not attempt to generate any config code
 - we do not account for prefabs (crates), but we provide a generator tool that does.
