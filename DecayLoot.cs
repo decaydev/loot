@@ -33,7 +33,7 @@ namespace Oxide.Plugins
                         populatedContainers++;
                         break;
                     }
-                Puts($"[DecayLoot]: {populatedContainers} containers uptdate.");
+                Puts($"[DecayLoot]: {populatedContainers} containers update.");
                 initialized = true;
             });
         }
@@ -135,7 +135,7 @@ namespace Oxide.Plugins
                 public string id;
                 public int[] item_range;
                 public List<Item> items;
-                public int scrap;
+                public int[] scrap_range;
 
                 public class Item
                 {
