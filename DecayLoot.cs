@@ -66,7 +66,6 @@ namespace Oxide.Plugins
                         PrintWarning("blueprintbase is null for item: {0}", itemSpec.shortname);
                         continue;
                     }
-
                     item = ItemManager.Create(blueprintBaseDef);
                     item.blueprintTarget = ranged.itemDef.itemid;
                 }
@@ -89,7 +88,6 @@ namespace Oxide.Plugins
                         item.Remove();
                 }
             }
-
             container.GenerateScrap();
             container.SendNetworkUpdate();
             return true;
@@ -106,10 +104,8 @@ namespace Oxide.Plugins
                         ItemManager.DoRemoves();
                         return true;
                     }
-
                     return null;
                 }
-
             return null;
         }
 
