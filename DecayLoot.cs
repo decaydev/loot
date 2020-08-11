@@ -6,7 +6,7 @@ namespace Oxide.Plugins
 {
     [Info("DecayLoot", "decay.dev", "0.0.1")]
     [Description("manage loot")]
-    public class DLoot : RustPlugin
+    public class DecayLoot : RustPlugin
     {
         private ConfigData configData;
 
