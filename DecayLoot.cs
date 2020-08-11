@@ -46,7 +46,7 @@ namespace Oxide.Plugins
             itemsCount = prefab.item_range[0] == prefab.item_range[1] ? prefab.item_range[1] : rng.Next(prefab.item_range[0], prefab.item_range[1]);
             container.inventory.Clear();
             ItemManager.DoRemoves();
-            container.scrapAmount = prefab.scrap;
+            container.scrapAmount = rng.Next(prefab.scrap_range[0], prefab.scrap_range[1]);
             container.inventory.capacity = itemsCount;
             var sample = new List<ConfigData.Prefab.Item>(prefab.items);
 
