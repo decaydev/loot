@@ -33,7 +33,7 @@ We wanted the following attributes to ensure performance:
 - rarity indexing
   - key for this exists, just need to implement
 - blueprint boolean (give blueprints?)
-  - we can give a blue print or not
+  - we can give a blueprint or not
     - we may implement a dice roll (TBD)
 
 ### LootTable Example (not compatible with BetterLoot):
@@ -67,7 +67,3 @@ We wanted the following attributes to ensure performance:
    }
 ]
 ```
-
-## Why not use BetterLoot?
-
-We started here but quickly learned that the plugin wasn't doing exactly what we wanted. As engineers we decided to take a peek under the covers. We found a lot of useless code, inaccurate data being displayed to the user/logs, too many looping constucts, and high cyclomatic complexity between functions/methods. Last but not least, we also noticed the BetterLoot plugin caused the game engine to chirp/halt on a 4 Core, 16GB server with no users. 670 lines of code versus 150 lines of code, you do the math.
