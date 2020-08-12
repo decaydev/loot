@@ -1,9 +1,9 @@
 
 <img src="https://i.ibb.co/2dGJm44/logo.png" alt="decay.dev" width="255"/><img src="https://i.ibb.co/vvRfnRb/loot.png" alt="decay.dev/loot" width="255"/>
 
-## A simple/fast loot system.
+## A simple/fast loot system. 
 
-Why another loot system? Because all of the existing loot systems didn't do what we wanted, were 3-4 times as large from a code base perspective, and all were painfully slow which can have serious impact on server performance which results in a negative player experience. Less is more!
+Why another loot system? Because all of the existing loot systems didn't do what exactly what we wanted. Less is more. 
 
 We wanted the following attributes to ensure performance:
 
@@ -39,31 +39,34 @@ We wanted the following attributes to ensure performance:
 ### LootTable Example (not compatible with BetterLoot):
 ```json
 [
-   {
-      "id":"assets/bundled/prefabs/radtown/loot_barrel_2.prefab",
-      "blueprints":true,
-      "items":[
-         {
-            "shortname":"barricade.stone.blueprint",
-            "min":1,
-            "max":1,
-            "rar":0
-         },
-         {
-            "shortname":"barricade.wood",
-            "min":1,
-            "max":1,
-            "rar":0
-         }
-      ],
-      "item_range":[
-         1,
-         2
-      ],
-      "scrap_range": [
-         1,
-         100
-      ]
-   }
+  {
+    "blueprints": true,
+    "items": [
+      {
+        "shortname": "barricade.stone.blueprint",
+        "min": 1,
+        "max": 1,
+        "rar": 0
+      },
+      {
+        "shortname": "barricade.wood",
+        "min": 1,
+        "max": 1,
+        "rar": 0
+      }
+    ],
+    "item_range": [
+      1,
+      2
+    ],
+    "scrap_range": [
+      1,
+      100
+    ]
+  }
 ]
 ```
+
+# BetterLoot
+
+If you're currently using BetterLoot we provide a tool for converting your `JSON` configuration to our format. 
