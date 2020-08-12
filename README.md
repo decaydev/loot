@@ -3,24 +3,31 @@
 
 ## A simple/fast loot system. 
 
-Why another loot system? Because all of the existing loot systems didn't do what exactly what we wanted. Less is more. 
+Why another loot system? Because all of the existing loot systems didn't do what exactly what we wanted and because the behavior of the plugins was too complicated.
 
-We wanted the following attributes to ensure performance:
+## Requirement
+
+We wanted the following attributese:
 
 - unique loot in crates without intense looping/retrying
+  - arrays where sensible/possible
 - stacked loot
 - fixed scrap amounts
 - random versus probable
   - random number of loot items within range
   - random min/max stacking within range
-    - min/max respected (if min is 12 and max is 12, put 12 pieces of loot in crate)
+    - min/max respected (if min is 5 and max is 5, put 5 damn pieces of loot in the crate)
   - no duplicates
 - we do not attempt to generate any config code
 - we do not account for prefabs (crates), but we provide a generator tool that does.
 - we do not rely on or use Rust/Facepunch DLL's outside of what `oxide` uses
   - less chances of breakage when API's change (and they do)
+- accurate counting and logging
+- We are faster than **BetterLoot** and we do it in less then 150 lines of code versus 600+
+  - to be fair see scroll up - we do not attempt to generate any config code
 
-## Requirements (assumes linux server)
+
+## Requirements
 
 - rust/oxide server
 - generate your `DecayLoot.json` config first and move it to the `oxide/config/` directory in oxide
@@ -31,12 +38,11 @@ We wanted the following attributes to ensure performance:
 ## Todo
 - skinnable loot
 - rarity indexing
-  - key for this exists, just need to implement
-- blueprint boolean (give blueprints?)
-  - we can give a blueprint or not
-    - we may implement a dice roll (TBD)
+  - key exists for future work
+- blueprint boolean
+  - we may implement a random bool if true, else no blueprints
 
-### LootTable Example (not compatible with BetterLoot):
+### LootTable Example:
 ```json
 [
   {
@@ -69,4 +75,4 @@ We wanted the following attributes to ensure performance:
 
 # BetterLoot
 
-If you're currently using BetterLoot we provide a tool for converting your `JSON` configuration to our format. 
+If you're currently using BetterLoot we provide a tool for converting your `JSON` configuration to the DecayLoot format. 
