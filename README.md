@@ -45,15 +45,12 @@
       {
         "shortname": "barricade.stone.blueprint",
         "min": 1,
-        "max": 1,
-        "rar": 0
+        "max": 1
       },
       {
         "shortname": "barricade.wood",
         "min": 1,
-        "max": 1,
-        "rar": 0
-      }
+        "max": 1      }
     ],
     "item_range": [
       1,
