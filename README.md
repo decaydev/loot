@@ -9,14 +9,14 @@
 
 - unique loot in crates without intense looping/retrying
   - arrays where sensible/possible
-  - no duplicates
+  - no duplicate items
 - stacked loot
 - fixed scrap amounts
 - random versus probable
   - random number of loot items within range
   - random min/max stacking within range
-    - min/max respected (if min is 5 and max is 5, put 5 damn pieces of loot in the crate)
-- we do not attempt to generate any config code
+    - min/max respected (if min is 5 and max is 5, put 5 pieces of loot in the crate)
+- we do not attempt to generate any base config code
 - we do not account for prefabs (crates), but we provide a generator tool that does.
 - we do not rely on or use Rust/Facepunch DLL's outside of what `oxide` uses
 - accurate counting and logging
