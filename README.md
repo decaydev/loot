@@ -31,10 +31,6 @@
 
 ## Todo
 - skinnable loot
-- rarity indexing
-  - key exists for future work
-- blueprint boolean
-  - we may implement a random bool if true, else no blueprints
 
 ### LootTable Example:
 ```json
