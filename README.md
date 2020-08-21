@@ -59,7 +59,3 @@
   }
 ]
 ```
-
-# BetterLoot
-
-If you're currently using BetterLoot we provide a tool for converting your BetterLoot configuration to the DecayLoot format. 
