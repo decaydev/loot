@@ -35,17 +35,22 @@
 ```json
 [
   {
-    "blueprints": true,
+    "blueprints": 0,
     "items": [
       {
         "shortname": "barricade.stone.blueprint",
-        "min": 1,
-        "max": 1
+        "range": [
+          0,
+          1
+        ]
       },
       {
         "shortname": "barricade.wood",
-        "min": 1,
-        "max": 1      }
+        "range": [
+          0,
+          1
+        ]
+      }
     ],
     "item_range": [
       1,
