@@ -27,7 +27,7 @@
 ## Install/Requirements (important!!!)
 
 - rust/oxide server
-- generate your `DecayLoot.json` config **first** and move it to the `oxide/config/` directory in oxide
+- generate your `DecayLoot.json` config **FIRST** and move it to the `oxide/config/` directory in oxide
 - move `DecayLoot.cs`  into `oxide/plugins/` directory
 - reload plugin
 
