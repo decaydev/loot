@@ -33,33 +33,36 @@
 
 ### LootTable Example:
 ```json
-[
-  {
-    "blueprints": 0,
-    "items": [
-      {
-        "shortname": "barricade.stone.blueprint",
-        "range": [
-          0,
-          1
-        ]
-      },
-      {
-        "shortname": "barricade.wood",
-        "range": [
-          0,
-          1
-        ]
-      }
-    ],
-    "item_range": [
-      1,
-      2
-    ],
-    "scrap_range": [
-      1,
-      100
-    ]
-  }
-]
+{
+  "prefabs": [
+    {
+      "id": "assets/bundled/prefabs/autospawn/resource/loot/loot-barrel-1.prefab",
+      "blueprints": 1,
+      "scrap_range": [
+        0,
+        0
+      ],
+      "item_range": [
+        0,
+        0
+      ],
+      "items": [
+        {
+          "shortname": "riflebody",
+          "range": [
+            0,
+            0
+          ]
+        },
+        {
+          "shortname": "ammo.shotgun",
+          "range": [
+            0,
+            1
+          ]
+        }
+      ]
+    }
+  ]
+}
 ```
