@@ -2,9 +2,7 @@
 
 ## DecayLoot
 
-
-
-## Requirements/Attributes
+## Plugin Attributes
 
 - unique loot in crates without intense looping/retrying
   - arrays where sensible/possible
@@ -17,20 +15,16 @@
   - random min/max stacking within range
     - min/max respected (if min is 5 and max is 5, put 5 pieces of loot in the crate)
 - we do not attempt to generate any base config code
-- we do not account for prefabs (crates), but we provide a generator tool that does [https://decay.dev/loot](https://decay.dev/loot).
+- we do not account for prefabs (crates), but we provide a nice generator tool that does [https://decay.dev/loot](https://decay.dev/loot).
 - we do not rely on or use Rust/Facepunch DLL's outside of what `oxide` uses
 - accurate counting and logging
 
-## Requirements
+## Install/Requirements (important!!!)
 
 - rust/oxide server
-- generate your `DecayLoot.json` config first and move it to the `oxide/config/` directory in oxide
+- generate your `DecayLoot.json` config **first** and move it to the `oxide/config/` directory in oxide
 - move `DecayLoot.cs`  into `oxide/plugins/` directory
 - reload plugin
-- containers drop and pick up new loot
-
-## Todo
-- skinnable loot
 
 ### LootTable Example:
 ```json
