@@ -37,7 +37,6 @@
   "prefabs": [
     {
       "id": "assets/bundled/prefabs/autospawn/resource/loot/loot-barrel-1.prefab",
-      "blueprints": 1,
       "scrap_range": [
         0,
         0
