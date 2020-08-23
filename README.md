@@ -6,6 +6,7 @@
 
 - unique loot in crates without intense looping/retrying
   - arrays where sensible/possible
+    - int over float
   - no duplicate items
 - stacked loot
 - blueprints support for individual items
