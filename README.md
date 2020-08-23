@@ -9,6 +9,7 @@
     - int over float
     - min/max range types
   - no duplicate items
+- guaranteed scrap ranges  
 - stacked loot
 - blueprints support for individual items
 - fixed scrap amounts
@@ -25,6 +26,10 @@
   using System.Collections.Generic;
   using System.Linq;
 ```
+
+## Caveats
+
+Users are unlikely to hit this edge case but if you choose a guaranteed scrap range, and choose to add an additional scrap resource to the crate, that scrap will be stacked. 
 
 ## Install/Requirements (important!!!)
 
