@@ -9,6 +9,7 @@
 - unique loot in crates without intense looping/retrying
   - arrays where sensible/possible
   - no duplicate items
+- pick and choose blueprints at an item level
 - stacked loot
 - fixed scrap amounts
 - random versus probable
