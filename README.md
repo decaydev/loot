@@ -33,7 +33,7 @@
 
 ## Loot Table Generator
 
-You can run this (yourself)[https://github.com/decaydev/lootapp] or use the latest version here [https://decay.dev/loot](https://decay.dev/loot)
+You can run this [yourself](https://github.com/decaydev/lootapp) or use the latest version here [https://decay.dev/loot](https://decay.dev/loot)
 
 ![](https://i.ibb.co/zn3QjF7/screen-shot-2020-08-23-at-1-24-43-pm.png)
 
