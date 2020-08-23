@@ -19,6 +19,7 @@
 - we do not account for prefabs (crates), but we provide a nice generator tool that does [https://decay.dev/loot](https://decay.dev/loot).
 - we do not rely on or use Rust/Facepunch DLL's outside of what `oxide` uses
 ```
+  using Newtonsoft.Json;
   using System;
   using System.Collections.Generic;
   using System.Linq;
