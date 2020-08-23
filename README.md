@@ -31,7 +31,7 @@
 - move `DecayLoot.cs`  into `oxide/plugins/` directory
 - reload plugin
 
-### LootTable Example:
+### LootTable JSON Schema
 ```json
 {
   "prefabs": [
