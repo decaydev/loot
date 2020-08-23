@@ -9,15 +9,15 @@
 - unique loot in crates without intense looping/retrying
   - arrays where sensible/possible
   - no duplicate items
-- pick and choose blueprints at an item level
 - stacked loot
+- blueprints support for individual items
 - fixed scrap amounts
 - random versus probable
   - random number of loot items within range
   - random min/max stacking within range
     - min/max respected (if min is 5 and max is 5, put 5 pieces of loot in the crate)
 - we do not attempt to generate any base config code
-- we do not account for prefabs (crates), but we provide a generator tool that does.
+- we do not account for prefabs (crates), but we provide a generator tool that does [https://decay.dev/loot](https://decay.dev/loot).
 - we do not rely on or use Rust/Facepunch DLL's outside of what `oxide` uses
 - accurate counting and logging
 
