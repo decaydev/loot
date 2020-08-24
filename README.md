@@ -44,7 +44,7 @@ You can run this [yourself](https://github.com/decaydev/lootapp) or use the late
 
 ![](https://i.ibb.co/zn3QjF7/screen-shot-2020-08-23-at-1-24-43-pm.png)
 
-### LootTable JSON Schema
+### DecayLoot JSON Schema
 ```json
 {
   "prefabs": [
