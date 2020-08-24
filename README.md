@@ -1,4 +1,4 @@
-<img src="https://i.ibb.co/93mSYZ4/decay.png" alt="decay.dev" width="255"/><img src="https://i.ibb.co/zbkjYkV/loot.png" alt="decay.dev/loot" width="255"/>
+<img src="https://i.ibb.co/93mSYZ4/decay.png" alt="decay.dev" width="256"/><img src="https://i.ibb.co/zbkjYkV/loot.png" alt="decay.dev/loot" width="256"/>
 
 # DecayLoot
 
