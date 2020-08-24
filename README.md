@@ -40,7 +40,7 @@
 - move `DecayLoot.cs`  into `oxide/plugins/` directory
 - reload plugin
 
-## Loot Table Generator
+## DecayLoot Table Generator
 
 You can run this [yourself](https://github.com/decaydev/lootapp) or use the latest version here [https://decay.dev/loot](https://decay.dev/loot)
 
