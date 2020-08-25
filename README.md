@@ -29,8 +29,8 @@
 
 ## Caveats
 
-- If you use `scrap_range`, and a max items of `1`, scrap will always take precedence as the single regardless of the items added to the table.
-- Users are unlikely to hit this edge case but if you choose a guaranteed scrap range, and choose to add an additional scrap resource to the crate, all scrap will be stacked.
+- If you use `scrap_range`, and a max items of `1`, **scrap will always take precedence as the single item** regardless of the items you added to the table.
+- Users are unlikely to hit this edge case but if you choose a guaranteed scrap range, and also choose to add an additional scrap resource to the crate, scrap will be stacked.
 - We don't account for rarity of items
 
 ## Install/Requirements (important!!!)
