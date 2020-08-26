@@ -34,7 +34,7 @@
 - If you choose a guaranteed scrap range, and also choose to add an additional scrap resource to the crate as an item, scrap will be stacked.
 - We don't account for rarity of items
 
-## Install/Requirements (important!!!)
+## Install/Requirements
 
 - rust/oxide server
 - generate your `DecayLoot.json` config **FIRST** and move it to the `oxide/config/` directory in oxide
