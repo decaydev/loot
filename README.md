@@ -9,9 +9,10 @@
     - int over float
     - min/max range types
   - no duplicate items
+  - no empty slots in crates (less calculations)
 - guaranteed scrap ranges  
 - stacked loot
-- blueprints support for individual items
+- blueprints support for individual items 
 - fixed scrap amounts
 - random versus probable
   - random number of loot items within range
