@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/decaydev/art/master/decay.png" width=192><img src="https://raw.githubusercontent.com/decaydev/art/master/plugins/loot.png" width=192>
 
-# DecayLoot
+# DecayLoot - APPROVE ME!
 
 ## Plugin Attributes
 
