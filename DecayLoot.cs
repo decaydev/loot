@@ -5,7 +5,7 @@ using System.Linq;
 
 namespace Oxide.Plugins
 {
-    [Info("DecayLoot", "decay.dev", "0.1.0")]
+    [Info("DecayLoot", "decay.dev", "0.2.0")]
     [Description("managed loot, https://decay.dev/loot")]
     public class DecayLoot : RustPlugin
     {
